@@ -1,0 +1,70 @@
+<!-- Main -->
+<section id="main" ng-controller="HomeController as ctrl">
+  <div class="container-fluid characters-container">
+    <!-- Welcome -->
+    <app-welcome></app-welcome>
+    <!-- Search bar -->
+    <div class="row search-container">
+      <form name="search">
+        <div class="col-xs-12 col-sm-12 col-md-12">
+          <div class="input-group">
+            <input
+              ng-model="ctrl.searchName"
+              type="text"
+              class="form-control search-bar"
+              placeholder="Search for a character..."
+            />
+            <span class="input-group-btn">
+              <button ng-click="ctrl.search()" class="btn btn-danger">
+                <span class="glyphicon glyphicon-search"></span>
+              </button>
+              <button
+                type="button"
+                class="btn btn-danger dropdown-toggle"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                {{ctrl.limit}}
+                <span class="caret"></span>
+                <span class="sr-only">Toggle Dropdown</span>
+              </button>
+              <ul class="dropdown-menu dropdown-menu-right">
+                <li class="limit-divider">Items per page</li>
+                <li role="separator" class="divider"></li>
+                <li
+                  ng-click="ctrl.switchLimit(limit)"
+                  ng-repeat="limit in ctrl.limits"
+                  class="limit-item"
+                >
+                  <span>{{limit}}</span>
+                </li>
+              </ul>
+            </span>
+          </div>
+        </div>
+      </form>
+    </div>
+    <!-- Error in loading characters list -->
+    <div class="row">
+      <div ng-if="ctrl.error" class="col-md-12">
+        <div class="alert alert-danger" role="alert">
+          <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+          <strong>Hmm...</strong> {{ctrl.errorMessage}}
+        </div>
+      </div>
+    </div>
+    <!-- Characters list has been loaded -->
+    <div class="row">
+      <div ng-repeat="character in ctrl.characters" class="col-xs12 col-sm-6 col-md-4 col-lg-3">
+        <list-character-item
+          character="character"
+          see-details="ctrl.seeDetails(character)"
+        ></list-character-item>
+      </div>
+      <div ng-if="ctrl.characters.length < ctrl.totalItems" class="col-md-12 text-center">
+        <button ng-click="ctrl.seeMore()" class="btn btn-danger">See more</button>
+      </div>
+    </div>
+  </div>
+</section>

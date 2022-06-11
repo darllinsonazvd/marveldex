@@ -1,0 +1,21 @@
+.bg-marvel {
+  background-image: url('../../../assets/img/bg-red.jpg');
+  background-position: center;
+}
+
+.copyrights {
+  color: #f6f6f6;
+}
+
+.copyright {
+  font-weight: 600;
+}
+
+.github {
+  color: #f6f6f6;
+}
+
+.github:hover {
+  text-decoration: underline;
+  color: #f6f6f6;
+}

@@ -1,0 +1,38 @@
+#main {
+  margin-top: 60px;
+  min-height: calc(100vh - 60px - 105px);
+}
+
+.search-container {
+  margin-bottom: 1.5rem;
+}
+
+.search-bar {
+  cursor: text;
+}
+
+.search-bar:focus {
+  border-color: #c02e2e;
+  box-shadow: none;
+}
+
+.dropdown-menu-right {
+  right: 0;
+}
+
+.characters-container {
+  padding: 2rem;
+}
+
+.limit-divider {
+  padding-left: 5px;
+}
+
+.limit-item {
+  padding-left: 5px;
+  cursor: pointer;
+}
+
+.limit-item:hover {
+  background-color: #d3d3d3;
+}

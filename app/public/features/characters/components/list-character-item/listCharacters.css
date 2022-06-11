@@ -1,0 +1,24 @@
+#title {
+  font-weight: 700;
+}
+
+.character-container {
+  height: auto;
+}
+
+.details-link {
+  bottom: 0;
+  cursor: pointer;
+  color: #d43f3a;
+}
+
+.details-link:hover {
+  color: #c02f2a;
+}
+
+/* medium devices: 768 > */
+@media (min-width: 768px) {
+  .character-container {
+    height: 660px;
+  }
+}

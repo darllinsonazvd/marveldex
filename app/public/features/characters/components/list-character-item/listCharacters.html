@@ -1,0 +1,16 @@
+<div class="thumbnail character-container text-center">
+  <div class="caption">
+    <img
+      class="img-rounded"
+      ng-src="{{ctrl.character.thumbnail.path + '/standard_xlarge.jpg'}}"
+      alt="Character image"
+    />
+    <h3 id="title">{{ctrl.character.name}}</h3>
+    <p>{{ctrl.character.description || 'No description for this character.'}}</p>
+  </div>
+  <div class="row">
+    <div class="col-md-12 text-center">
+      <a ng-click="ctrl.seeDetails()" class="navbar-link details-link">More details</a>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,125 @@
+#main {
+  min-height: calc(100vh - 105px);
+}
+
+.px-0 {
+  padding: 0px;
+}
+
+.header-details {
+  background-image: url('../../../assets/img/banner.jpg');
+  background-repeat: repeat-x;
+}
+
+.pro-img {
+  margin-top: 140px;
+  width: 180px;
+  height: 180px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  border-radius: 100%;
+}
+
+.character-name {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.character-description {
+  font-size: 1.6rem;
+}
+
+.title {
+  font-weight: bold;
+}
+
+.thumbnail {
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.35);
+}
+
+.thumbnail-comics {
+  background-image: url('../../../assets/img/bg-details-comics.png');
+  background-size: 500px;
+  background-position: center;
+}
+
+.thumbnail-series {
+  background-image: url('../../../assets/img/bg-details-series.png');
+  background-size: 600px;
+  background-position: center;
+}
+
+.thumbnail-stories {
+  background-image: url('../../../assets/img/bg-details-stories.png');
+  background-size: 800px;
+  background-position: center;
+}
+
+.thumbnail-events {
+  background-image: url('../../../assets/img/bg-details-events.png');
+  background-size: 800px;
+  background-position: center;
+}
+
+hr.solid {
+  border-top: 2px solid rgb(150, 0, 0);
+}
+
+.no-events {
+  font-size: 1.7rem;
+}
+
+/* large devices: 992 > */
+@media (min-width: 992px) {
+  .margin-top {
+    margin-top: 80px;
+  }
+
+  .text-md-left {
+    text-align: left;
+  }
+
+  .pro-img {
+    margin-top: 120px;
+    margin-left: 60px;
+    width: 200px;
+    height: 200px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    border-radius: 100%;
+  }
+
+  .character-name {
+    margin-top: -190px;
+    margin-left: 290px;
+    color: #f6f6f6;
+    font-size: 5rem;
+    font-weight: bold;
+  }
+
+  .character-description {
+    max-width: calc(100% - 500px);
+    margin-top: -20px;
+    margin-left: 290px;
+    padding: 12px;
+    border-radius: 8px;
+    background-color: #f6f6f6;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    font-size: 1.6rem;
+  }
+
+  .md-height {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 350px;
+  }
+}
+
+/* medium devices: 767 > */
+@media (min-width: 767px) {
+  .sm-height {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 350px;
+  }
+}

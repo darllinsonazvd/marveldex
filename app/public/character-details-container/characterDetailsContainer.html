@@ -1,0 +1,121 @@
+<<<<<<< HEAD
+=======
+<!-- Header -->
+<app-header></app-header>
+>>>>>>> e086f8e65877b6e90488a293177229b7c3e16577
+<section id="main" ng-controller="CharacterDetailsController as ctrl">
+  <div class="container-fluid px-0">
+    <!-- Profile header -->
+    <div class="col-xs-12 col-sm-12 col-md-12 header-details text-center text-md-left">
+      <img
+        class="pro-img"
+        ng-src="{{ctrl.characterPhoto + '/standard_xlarge.jpg'}}"
+        alt="Character photo"
+      />
+      <h1 class="character-name">{{ctrl.characterName}}</h1>
+      <p class="character-description">
+        {{ctrl.characterDescription || 'No description for this character.'}}
+      </p>
+    </div>
+    <!-- Divider -->
+    <div class="col-xs-12 col-sm-12 col-md-12 px-0 margin-top"><hr class="solid" /></div>
+    <!-- List comics -->
+    <div class="col-xs-12 col-sm-12 col-md-12">
+      <h1 class="title text-center">Comics ({{ctrl.characterData.comics.available}})</h1>
+      <div ng-repeat="item in ctrl.characterComicsData" class="col-xs-12 col-sm-6 col-md-3">
+        <div class="thumbnail thumbnail-comics text-center sm-height md-height">
+          <div class="caption">
+            <h3 class="title">{{item.name}}</h3>
+            <p>
+              <a
+                href="https://www.google.com/search?q=comic+{{item.name}}"
+                target="_blank"
+                class="btn btn-danger"
+                role="button"
+                >View more <span class="glyphicon glyphicon-new-window" aria-hidden="true"></span
+              ></a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <p ng-if="ctrl.characterComicsData.length === 0" class="no-events text-center">
+        No comics for this character.
+      </p>
+    </div>
+    <!-- Divider -->
+    <div class="col-xs-12 col-sm-12 col-md-12 px-0"><hr class="solid" /></div>
+    <!-- List series -->
+    <div class="col-xs-12 col-sm-12 col-md-12">
+      <h1 class="title text-center">Series ({{ctrl.characterData.series.available}})</h1>
+      <div ng-repeat="item in ctrl.characterSeriesData" class="col-xs-12 col-sm-6 col-md-3">
+        <div class="thumbnail thumbnail-series text-center sm-height md-height">
+          <div class="caption">
+            <h3 class="title">{{item.name}}</h3>
+            <p>
+              <a
+                href="https://www.google.com/search?q=serie+marvel+{{item.name}}"
+                target="_blank"
+                class="btn btn-danger"
+                role="button"
+                >View more <span class="glyphicon glyphicon-new-window" aria-hidden="true"></span
+              ></a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <p ng-if="ctrl.characterSeriesData.length === 0" class="no-events text-center">
+        No series for this character.
+      </p>
+    </div>
+    <!-- Divider -->
+    <div class="col-xs-12 col-sm-12 col-md-12 px-0"><hr class="solid" /></div>
+    <!-- List stories -->
+    <div class="col-xs-12 col-sm-12 col-md-12">
+      <h1 class="title text-center">Stories ({{ctrl.characterData.stories.available}})</h1>
+      <div ng-repeat="item in ctrl.characterStoriesData" class="col-xs-12 col-sm-6 col-md-3">
+        <div class="thumbnail thumbnail-stories text-center sm-height md-height">
+          <div class="caption">
+            <h3 class="title">{{item.name}}</h3>
+            <p>
+              <a
+                href="https://www.google.com/search?q=story+marvel+{{item.name}}"
+                target="_blank"
+                class="btn btn-danger"
+                role="button"
+                >View more <span class="glyphicon glyphicon-new-window" aria-hidden="true"></span
+              ></a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <p ng-if="ctrl.characterStoriesData.length === 0" class="no-events text-center">
+        No stories for this character.
+      </p>
+    </div>
+    <!-- Divider -->
+    <div class="col-xs-12 col-sm-12 col-md-12 px-0"><hr class="solid" /></div>
+    <!-- List events -->
+    <div class="col-xs-12 col-sm-12 col-md-12">
+      <h1 class="title text-center">Events ({{ctrl.characterData.events.available}})</h1>
+      <div ng-repeat="item in ctrl.characterEventsData" class="col-xs-12 col-sm-6 col-md-3">
+        <div class="thumbnail thumbnail-events text-center sm-height md-height">
+          <div class="caption">
+            <h3 class="title">{{item.name}}</h3>
+            <p>
+              <a
+                href="https://www.google.com/search?q=event+marvel+{{item.name}}"
+                target="_blank"
+                class="btn btn-danger"
+                role="button"
+                >View more <span class="glyphicon glyphicon-new-window" aria-hidden="true"></span
+              ></a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <p ng-if="ctrl.characterEventsData.length === 0" class="no-events text-center">
+        No events for this character.
+      </p>
+    </div>
+  </div>
+</section>
