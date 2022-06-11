@@ -8,6 +8,19 @@
 
 ![cover](.github/preview.gif)
 
+## ▶ Getting Started
+
+Enquanto não temos a aplicação rodando em produção, rode no servidor de desenvolvimento:
+
+```bash
+npm install
+npm run dev
+# or
+yarn dev
+```
+
+Abra [http://localhost:4200](http://localhost:4200) em seu navegador e veja o resultado.
+
 ## 💻 Projeto
 
 O "Marveldex" é um projeto desenvolvido em AngularJS para o treinamento realizado pela ACT Digital. O projeto está na fase final de desenvolvimento e utiliza a API da Marvel para exibir o personagem Marvel pesquisado pelo usuário, exibindo seus detalhes e características, como seus quadrinhos, séries, filmes e eventos.
