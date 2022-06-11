@@ -25,7 +25,7 @@ Abra [http://localhost:4200](http://localhost:4200) em seu navegador e veja o re
 
 O "Marveldex" é um projeto desenvolvido em AngularJS para o treinamento realizado pela ACT Digital. O projeto está na fase final de desenvolvimento e utiliza a API da Marvel para exibir o personagem Marvel pesquisado pelo usuário, exibindo seus detalhes e características, como seus quadrinhos, séries, filmes e eventos.
 
-Você pode visitar a aplicação [clicando aqui](https://feedget-web.vercel.app/)
+Você pode visitar a aplicação [clicando aqui](#)
 
 ## ✨ Tecnologias e features
 
