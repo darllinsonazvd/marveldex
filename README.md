@@ -39,5 +39,3 @@ Você pode visitar a aplicação [clicando aqui](#)
 ## 📄 Licença
 
 Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](.github/LICENSE.md) para mais detalhes.
-
-<br />
