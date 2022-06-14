@@ -32,34 +32,6 @@
   font-weight: bold;
 }
 
-.thumbnail {
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.35);
-}
-
-.thumbnail-comics {
-  background-image: url('../../../assets/img/bg-details-comics.png');
-  background-size: 500px;
-  background-position: center;
-}
-
-.thumbnail-series {
-  background-image: url('../../../assets/img/bg-details-series.png');
-  background-size: 600px;
-  background-position: center;
-}
-
-.thumbnail-stories {
-  background-image: url('../../../assets/img/bg-details-stories.png');
-  background-size: 800px;
-  background-position: center;
-}
-
-.thumbnail-events {
-  background-image: url('../../../assets/img/bg-details-events.png');
-  background-size: 800px;
-  background-position: center;
-}
-
 hr.solid {
   border-top: 2px solid rgb(150, 0, 0);
 }
@@ -104,22 +76,5 @@ hr.solid {
     background-color: #f6f6f6;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
     font-size: 1.6rem;
-  }
-
-  .md-height {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 350px;
-  }
-}
-
-/* medium devices: 767 > */
-@media (min-width: 767px) {
-  .sm-height {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 350px;
   }
 }

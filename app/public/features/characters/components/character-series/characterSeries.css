@@ -1,0 +1,29 @@
+.thumbnail {
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.35);
+}
+
+.thumbnail-series {
+  background-image: url('../../../../../../assets/img/bg-details-series.png');
+  background-size: 600px;
+  background-position: center;
+}
+
+/* large devices: 992 > */
+@media (min-width: 992px) {
+  .md-height {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 350px;
+  }
+}
+
+/* medium devices: 767 > */
+@media (min-width: 767px) {
+  .sm-height {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 350px;
+  }
+}
