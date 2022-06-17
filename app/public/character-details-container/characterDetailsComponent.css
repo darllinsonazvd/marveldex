@@ -40,6 +40,10 @@ hr.solid {
   font-size: 1.7rem;
 }
 
+.last-btn {
+  margin-bottom: 20px;
+}
+
 /* large devices: 992 > */
 @media (min-width: 992px) {
   .margin-top {

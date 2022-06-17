@@ -17,48 +17,72 @@
     <!-- List comics -->
     <div class="col-xs-12 col-sm-12 col-md-12">
       <h1 class="title text-center">Comics ({{ctrl.characterData.comics.available}})</h1>
-      <div ng-repeat="comic in ctrl.characterComicsData" class="col-xs-12 col-sm-6 col-md-3">
+      <div ng-repeat="comic in ctrl.comics" class="col-xs-12 col-sm-6 col-md-3">
         <character-comics comic="comic"></character-comics>
       </div>
-      <p ng-if="ctrl.characterComicsData.length === 0" class="no-events text-center">
+      <p ng-if="ctrl.comics.length === 0" class="no-events text-center">
         No comics for this character.
       </p>
+      <div
+        ng-if="ctrl.comics.length < ctrl.characterData.comics.available"
+        class="col-md-12 text-center"
+      >
+        <button ng-click="ctrl.seeMoreComics()" class="btn btn-danger">See more</button>
+      </div>
     </div>
     <!-- Divider -->
     <div class="col-xs-12 col-sm-12 col-md-12 px-0"><hr class="solid" /></div>
     <!-- List series -->
     <div class="col-xs-12 col-sm-12 col-md-12">
       <h1 class="title text-center">Series ({{ctrl.characterData.series.available}})</h1>
-      <div ng-repeat="serie in ctrl.characterSeriesData" class="col-xs-12 col-sm-6 col-md-3">
+      <div ng-repeat="serie in ctrl.series" class="col-xs-12 col-sm-6 col-md-3">
         <character-series serie="serie"></character-series>
       </div>
-      <p ng-if="ctrl.characterSeriesData.length === 0" class="no-events text-center">
+      <p ng-if="ctrl.series.length === 0" class="no-events text-center">
         No series for this character.
       </p>
+      <div
+        ng-if="ctrl.series.length < ctrl.characterData.series.available"
+        class="col-md-12 text-center"
+      >
+        <button ng-click="ctrl.seeMoreSeries()" class="btn btn-danger">See more</button>
+      </div>
     </div>
     <!-- Divider -->
     <div class="col-xs-12 col-sm-12 col-md-12 px-0"><hr class="solid" /></div>
     <!-- List stories -->
     <div class="col-xs-12 col-sm-12 col-md-12">
       <h1 class="title text-center">Stories ({{ctrl.characterData.stories.available}})</h1>
-      <div ng-repeat="story in ctrl.characterStoriesData" class="col-xs-12 col-sm-6 col-md-3">
+      <div ng-repeat="story in ctrl.stories" class="col-xs-12 col-sm-6 col-md-3">
         <character-stories story="story"></character-stories>
       </div>
-      <p ng-if="ctrl.characterStoriesData.length === 0" class="no-events text-center">
+      <p ng-if="ctrl.stories.length === 0" class="no-events text-center">
         No stories for this character.
       </p>
+      <div
+        ng-if="ctrl.stories.length < ctrl.characterData.stories.available"
+        class="col-md-12 text-center"
+      >
+        <button ng-click="ctrl.seeMoreStories()" class="btn btn-danger">See more</button>
+      </div>
     </div>
     <!-- Divider -->
     <div class="col-xs-12 col-sm-12 col-md-12 px-0"><hr class="solid" /></div>
     <!-- List events -->
     <div class="col-xs-12 col-sm-12 col-md-12">
       <h1 class="title text-center">Events ({{ctrl.characterData.events.available}})</h1>
-      <div ng-repeat="event in ctrl.characterEventsData" class="col-xs-12 col-sm-6 col-md-3">
+      <div ng-repeat="event in ctrl.events" class="col-xs-12 col-sm-6 col-md-3">
         <character-events event="event"></character-events>
       </div>
-      <p ng-if="ctrl.characterEventsData.length === 0" class="no-events text-center">
+      <p ng-if="ctrl.events.length === 0" class="no-events text-center">
         No events for this character.
       </p>
+      <div
+        ng-if="ctrl.events.length < ctrl.characterData.events.available"
+        class="col-md-12 text-center"
+      >
+        <button ng-click="ctrl.seeMoreEvents()" class="btn btn-danger last-btn">See more</button>
+      </div>
     </div>
   </div>
 </section>

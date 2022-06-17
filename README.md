@@ -1,7 +1,7 @@
 <p align="center">
   <img alt="License" src="https://img.shields.io/static/v1?label=license&message=MIT&color=bd170b&labelColor=400703">
 
-  <img alt="Marveldex beta0.0.1" src="https://img.shields.io/static/v1?label=Marveldex&message=beta0.0.1&color=bd170b&labelColor=400703">
+  <img alt="Marveldex beta0.0.1" src="https://img.shields.io/static/v1?label=Marveldex&message=1.0.13&color=bd170b&labelColor=400703">
 
   <img alt="AngularJS 1.8.2" src="https://img.shields.io/static/v1?label=AngularJS&message=v1.8.2&color=bd170b&labelColor=400703" />
 </p>
@@ -13,24 +13,23 @@
 Enquanto não temos a aplicação rodando em produção, rode no servidor de desenvolvimento:
 
 ```bash
-npm install
-npm run dev
-# or
-yarn dev
+# use node 8.15.1
+$ npm install
+$ npm run dev
 ```
 
 Abra [http://localhost:4200](http://localhost:4200) em seu navegador e veja o resultado.
 
 ## 💻 Projeto
 
-O "Marveldex" é um projeto desenvolvido em AngularJS para o treinamento realizado pela ACT Digital. O projeto está na fase final de desenvolvimento e utiliza a API da Marvel para exibir o personagem Marvel pesquisado pelo usuário, exibindo seus detalhes e características, como seus quadrinhos, séries, filmes e eventos.
+O "Marveldex" é um projeto desenvolvido em AngularJS para o treinamento realizado pela ACT Digital. O projeto Utiliza a API da Marvel para exibir o personagem pesquisado pelo usuário, exibindo seus detalhes e características, como seus quadrinhos, séries, filmes e eventos.
 
 Você pode visitar a aplicação [clicando aqui](#)
 
 ## ✨ Tecnologias e features
 
 - [x] AngularJS v1.8.2
-- [x] Bootstrap
+- [x] Bootstrap 3
 - [x] Gulp Server
 - [x] Marvel Developer API
 - [x] Layout Responsivo
