@@ -14,6 +14,7 @@ Enquanto não temos a aplicação rodando em produção, rode no servidor de des
 
 ```bash
 # use node 8.15.1
+$ npm install -g gulp@3.9.1
 $ npm install
 $ npm run dev
 ```
