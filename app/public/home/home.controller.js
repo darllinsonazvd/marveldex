@@ -1,6 +1,8 @@
-angular.module('app').controller('HomeController', ['CharactersService', '$state', HomeController]);
+angular
+  .module('app')
+  .controller('HomeController', ['CharactersService', '$state', '$timeout', HomeController]);
 
-function HomeController(charactersService, $state) {
+function HomeController(charactersService, $state, $timeout) {
   const vm = this;
 
   vm.characters = [];
@@ -14,7 +16,10 @@ function HomeController(charactersService, $state) {
   vm.error = false;
   vm.errorMessage = '';
 
+  vm.loading = false;
+
   vm.search = () => {
+    vm.loading = true;
     vm.offset = 0;
     vm.getCharacters(true);
     window.scrollTo({
@@ -28,18 +33,23 @@ function HomeController(charactersService, $state) {
       .getAllCharacters(vm.searchName, vm.offset, vm.limit)
       .then(response => {
         if (response.data.data.results.length !== 0 && vm.searchName !== '') {
+          vm.loading = false;
           vm.error = false;
           vm.totalItems = response.data.data.total;
           if (reset) {
+            vm.loading = false;
             vm.characters = response.data.data.results;
           } else {
+            vm.loading = false;
             vm.characters = [...vm.characters, ...response.data.data.results];
           }
         } else if (response.data.data.results.length === 0) {
+          vm.loading = false;
           vm.error = true;
           vm.characters = [];
           vm.errorMessage = 'No characters found according to your search.';
         } else if (vm.searchName === '') {
+          vm.loading = false;
           vm.error = true;
           vm.characters = [];
           vm.errorMessage = "Enter the character's name!";

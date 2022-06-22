@@ -1,5 +1,8 @@
 <section id="main" ng-controller="CharacterDetailsController as ctrl">
-  <div class="container-fluid px-0">
+  <div class="container-fluid px-0" ng-if="ctrl.loadAllDetails === true">
+    <app-big-loading></app-big-loading>
+  </div>
+  <div class="container-fluid px-0" ng-if="ctrl.loadAllDetails === false">
     <!-- Profile header -->
     <div class="col-xs-12 col-sm-12 col-md-12 header-details text-center text-md-left">
       <img
@@ -29,6 +32,14 @@
       >
         <button ng-click="ctrl.seeMoreComics()" class="btn btn-danger">See more</button>
       </div>
+      <!-- Loading -->
+      <div
+        class="col-xs-12 col-sm-12 col-md-12"
+        ng-if="ctrl.loadingSectionDetails === true"
+        style="margin-top: 10px"
+      >
+        <app-loading></app-loading>
+      </div>
     </div>
     <!-- Divider -->
     <div class="col-xs-12 col-sm-12 col-md-12 px-0"><hr class="solid" /></div>
@@ -46,6 +57,14 @@
         class="col-md-12 text-center"
       >
         <button ng-click="ctrl.seeMoreSeries()" class="btn btn-danger">See more</button>
+      </div>
+      <!-- Loading -->
+      <div
+        class="col-xs-12 col-sm-12 col-md-12"
+        ng-if="ctrl.loadingSectionDetails === true"
+        style="margin-top: 10px"
+      >
+        <app-loading></app-loading>
       </div>
     </div>
     <!-- Divider -->
@@ -65,6 +84,14 @@
       >
         <button ng-click="ctrl.seeMoreStories()" class="btn btn-danger">See more</button>
       </div>
+      <!-- Loading -->
+      <div
+        class="col-xs-12 col-sm-12 col-md-12"
+        ng-if="ctrl.loadingSectionDetails === true"
+        style="margin-top: 10px"
+      >
+        <app-loading></app-loading>
+      </div>
     </div>
     <!-- Divider -->
     <div class="col-xs-12 col-sm-12 col-md-12 px-0"><hr class="solid" /></div>
@@ -82,6 +109,14 @@
         class="col-md-12 text-center"
       >
         <button ng-click="ctrl.seeMoreEvents()" class="btn btn-danger last-btn">See more</button>
+      </div>
+      <!-- Loading -->
+      <div
+        class="col-xs-12 col-sm-12 col-md-12"
+        ng-if="ctrl.loadingSectionDetails === true"
+        style="margin-top: 10px"
+      >
+        <app-loading></app-loading>
       </div>
     </div>
   </div>

@@ -45,6 +45,10 @@
         </div>
       </form>
     </div>
+    <!-- Loading -->
+    <div class="row" ng-if="ctrl.loading === true">
+      <app-loading></app-loading>
+    </div>
     <!-- Error in loading characters list -->
     <div class="row">
       <div ng-if="ctrl.error" class="col-md-12">
