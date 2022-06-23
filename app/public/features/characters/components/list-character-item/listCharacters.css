@@ -1,5 +1,10 @@
 #title {
   font-weight: 700;
+  max-width: calc(100% - 2px);
+}
+
+#description {
+  max-width: calc(100% - 2px);
 }
 
 .character-container {
@@ -14,6 +19,10 @@
 
 .details-link:hover {
   color: #c02f2a;
+}
+
+.thumbnail:hover {
+  border: 2px solid #c02f2a;
 }
 
 /* medium devices: 768 > */

@@ -20,7 +20,7 @@ function CharacterDetailsController(charactersService, $stateParams, $timeout) {
   vm.offset = 0;
   vm.limit = 20;
 
-  vm.loadAllDetails = true;
+  vm.loadingAllDetails = true;
   vm.loadingSectionDetails = false;
 
   vm.getCharacterDetails = charactersService.findDetails(vm.characterId).then(data => {
@@ -55,51 +55,47 @@ function CharacterDetailsController(charactersService, $stateParams, $timeout) {
       });
 
     $timeout(function () {
-      vm.loadAllDetails = false;
+      vm.loadingAllDetails = false;
     }, 1500);
   });
 
   vm.seeMoreComics = () => {
     vm.loadingSectionDetails = true;
     vm.offset += vm.limit;
-    $timeout(function () {
-      vm.loadingSectionDetails = false;
-    }, 3000);
+
     charactersService.seeComics(vm.characterId, vm.offset, vm.limit).then(response => {
       vm.comics = [...vm.comics, ...response.data.data.results];
+      vm.loadingSectionDetails = false;
     });
   };
 
   vm.seeMoreSeries = () => {
     vm.loadingSectionDetails = true;
     vm.offset += vm.limit;
-    $timeout(function () {
-      vm.loadingSectionDetails = false;
-    }, 3000);
+
     charactersService.seeSeries(vm.characterId, vm.offset, vm.limit).then(response => {
       vm.series = [...vm.series, ...response.data.data.results];
+      vm.loadingSectionDetails = false;
     });
   };
 
   vm.seeMoreStories = () => {
     vm.loadingSectionDetails = true;
     vm.offset += vm.limit;
-    $timeout(function () {
-      vm.loadingSectionDetails = false;
-    }, 3000);
+
     charactersService.seeStories(vm.characterId, vm.offset, vm.limit).then(response => {
       vm.stories = [...vm.stories, ...response.data.data.results];
+      vm.loadingSectionDetails = false;
     });
   };
 
   vm.seeMoreEvents = () => {
     vm.loadingSectionDetails = true;
     vm.offset += vm.limit;
-    $timeout(function () {
-      vm.loadingSectionDetails = false;
-    }, 3000);
+
     charactersService.seeEvents(vm.characterId, vm.offset, vm.limit).then(response => {
       vm.events = [...vm.events, ...response.data.data.results];
+      vm.loadingSectionDetails = false;
     });
   };
 }

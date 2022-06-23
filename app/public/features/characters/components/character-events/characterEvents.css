@@ -2,10 +2,18 @@
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.35);
 }
 
+.thumbnail:hover {
+  border: 2px solid #c02f2a;
+}
+
 .thumbnail-events {
   background-image: url('../../../../../../assets/img/bg-details-events.png');
   background-size: 800px;
   background-position: center;
+}
+
+.title {
+  max-width: calc(100% - 5px);
 }
 
 /* large devices: 992 > */

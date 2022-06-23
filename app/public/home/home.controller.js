@@ -1,8 +1,6 @@
-angular
-  .module('app')
-  .controller('HomeController', ['CharactersService', '$state', '$timeout', HomeController]);
+angular.module('app').controller('HomeController', ['CharactersService', '$state', HomeController]);
 
-function HomeController(charactersService, $state, $timeout) {
+function HomeController(charactersService, $state) {
   const vm = this;
 
   vm.characters = [];

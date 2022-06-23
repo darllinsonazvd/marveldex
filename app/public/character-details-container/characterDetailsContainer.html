@@ -1,8 +1,8 @@
 <section id="main" ng-controller="CharacterDetailsController as ctrl">
-  <div class="container-fluid px-0" ng-if="ctrl.loadAllDetails === true">
+  <div class="container-fluid px-0" ng-if="ctrl.loadingAllDetails === true">
     <app-big-loading></app-big-loading>
   </div>
-  <div class="container-fluid px-0" ng-if="ctrl.loadAllDetails === false">
+  <div class="container-fluid px-0" ng-if="ctrl.loadingAllDetails === false">
     <!-- Profile header -->
     <div class="col-xs-12 col-sm-12 col-md-12 header-details text-center text-md-left">
       <img
