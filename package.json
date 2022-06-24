@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "engines": {
-    "node": "8.15.1"
+    "node": "8.15.1",
+    "npm": "6.4.1"
   },
   "scripts": {
     "dev": "gulp dev"
