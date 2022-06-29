@@ -1,12 +1,13 @@
 <div class="thumbnail thumbnail-comics text-center sm-height md-height">
   <div class="caption">
+    <img
+      class="img-rounded"
+      ng-src="{{ctrl.comic.thumbnail.path + '/standard_xlarge.jpg'}}"
+      alt="Character image"
+    />
     <h3 class="title">{{ctrl.comic.title}}</h3>
     <p>
-      <a
-        href="https://www.google.com/search?q=comic+{{ctrl.comic.title}}"
-        target="_blank"
-        class="btn btn-danger"
-        role="button"
+      <a id="view-more" href="{{ctrl.comic.urls[0].url}}" target="_blank"
         >View more <span class="glyphicon glyphicon-new-window" aria-hidden="true"></span
       ></a>
     </p>

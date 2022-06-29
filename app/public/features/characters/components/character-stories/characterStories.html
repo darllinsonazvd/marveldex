@@ -1,12 +1,17 @@
 <div class="thumbnail thumbnail-stories text-center sm-height md-height">
   <div class="caption">
+    <img
+      class="img-rounded"
+      ng-src="https://us.123rf.com/450wm/pavelstasevich/pavelstasevich1811/pavelstasevich181101028/112815904-no-image-available-icon-flat-vector-illustration.jpg?ver=6"
+      alt="Character image"
+      width="200px"
+    />
     <h3 class="title">{{ctrl.story.title}}</h3>
     <p>
       <a
+        id="view-more"
         href="https://www.google.com/search?q=story+marvel+{{ctrl.story.title}}"
         target="_blank"
-        class="btn btn-danger"
-        role="button"
         >View more <span class="glyphicon glyphicon-new-window" aria-hidden="true"></span
       ></a>
     </p>

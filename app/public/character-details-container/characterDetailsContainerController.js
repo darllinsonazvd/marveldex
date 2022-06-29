@@ -56,7 +56,7 @@ function CharacterDetailsController(charactersService, $stateParams, $timeout) {
 
     $timeout(function () {
       vm.loadingAllDetails = false;
-    }, 1500);
+    }, 2000);
   });
 
   vm.seeMoreComics = () => {
