@@ -8,24 +8,11 @@
 
 ![cover](.github/preview.gif)
 
-## ▶ Getting Started
-
-Enquanto não temos a aplicação rodando em produção, rode no servidor de desenvolvimento:
-
-```bash
-# use node 8.15.1
-$ npm install -g gulp@3.9.1
-$ npm install
-$ npm run dev
-```
-
-Abra [http://localhost:4200](http://localhost:4200) em seu navegador e veja o resultado.
-
 ## 💻 Projeto
 
 O "Marveldex" é um projeto desenvolvido em AngularJS que utiliza a API da Marvel para exibir o personagem pesquisado pelo usuário, quando mostrando seus detalhes e características, como seu nome, uma breve descrição, quadrinhos, séries, filmes e eventos.
 
-Você pode visitar a aplicação [clicando aqui](#)
+Você pode visitar a aplicação [clicando aqui](https://marveldex.netlify.app/#!/home)
 
 ## ✨ Tecnologias e features
 
