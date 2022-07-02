@@ -1,9 +1,9 @@
 <p align="center">
-  <img alt="License" src="https://img.shields.io/badge/license-MIT-red?style=for-the-badge">
+  <img alt="License" src="https://img.shields.io/badge/license-MIT-b00c0c?style=for-the-badge">
 
-  <img alt="Marveldex version" src="https://img.shields.io/badge/Marveldex-1.1.13-red?style=for-the-badge">
+  <img alt="Marveldex version" src="https://img.shields.io/badge/Marveldex-1.1.13-b00c0c?style=for-the-badge">
 
-  <img alt="AngularJS 1.8.2" src="https://img.shields.io/badge/AngularJS-1.8.2-red?style=for-the-badge&logo=Angular" />
+  <img alt="AngularJS 1.8.2" src="https://img.shields.io/badge/AngularJS-1.8.2-b00c0c?style=for-the-badge&logo=Angular" />
 </p>
 
 ![cover](.github/preview.gif)
