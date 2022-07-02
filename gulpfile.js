@@ -98,3 +98,7 @@ gulp.task('server', ['watch'], () => {
     })
   );
 });
+
+gulp.task('prod', () => {
+  sequence('deps', 'env-dev', 'app');
+});
