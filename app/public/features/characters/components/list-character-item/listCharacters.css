@@ -1,10 +1,16 @@
+.thumbnail {
+  transition: 0.3s;
+}
+
+.thumbnail:hover {
+  transform: translateY(-10px);
+}
+
 .thumbnail-characters {
-  background-size: 500px;
-  background-position: center;
-  background: #e6e6e6;
-  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
-  border: 1px solid #d43f3a;
-  border-radius: 20px;
+  background: #f6f6f6;
+  box-shadow: 2px 2px 10px #bebebe;
+  border: 1.5px solid #d43f3a;
+  border-radius: 10px;
 }
 
 #title {

@@ -1,9 +1,9 @@
 <p align="center">
-  <img alt="License" src="https://img.shields.io/static/v1?label=license&message=MIT&color=bd170b&labelColor=400703">
+  <img alt="License" src="https://img.shields.io/badge/license-MIT-red?style=for-the-badge">
 
-  <img alt="Marveldex beta0.0.1" src="https://img.shields.io/static/v1?label=Marveldex&message=1.0.13&color=bd170b&labelColor=400703">
+  <img alt="Marveldex version" src="https://img.shields.io/badge/Marveldex-1.1.13-red?style=for-the-badge">
 
-  <img alt="AngularJS 1.8.2" src="https://img.shields.io/static/v1?label=AngularJS&message=v1.8.2&color=bd170b&labelColor=400703" />
+  <img alt="AngularJS 1.8.2" src="https://img.shields.io/badge/AngularJS-1.8.2-red?style=for-the-badge&logo=Angular" />
 </p>
 
 ![cover](.github/preview.gif)
@@ -23,7 +23,7 @@ Abra [http://localhost:4200](http://localhost:4200) em seu navegador e veja o re
 
 ## 💻 Projeto
 
-O "Marveldex" é um projeto desenvolvido em AngularJS para o treinamento realizado pela ACT Digital. O projeto Utiliza a API da Marvel para exibir o personagem pesquisado pelo usuário, exibindo seus detalhes e características, como seus quadrinhos, séries, filmes e eventos.
+O "Marveldex" é um projeto desenvolvido em AngularJS que utiliza a API da Marvel para exibir o personagem pesquisado pelo usuário, quando mostrando seus detalhes e características, como seu nome, uma breve descrição, quadrinhos, séries, filmes e eventos.
 
 Você pode visitar a aplicação [clicando aqui](#)
 
