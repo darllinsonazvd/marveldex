@@ -1,12 +1,14 @@
 <div class="thumbnail thumbnail-stories text-center sm-height md-height">
   <div class="caption">
     <img
-      class="img-rounded"
+      id="detail-image"
       ng-src="http://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available/standard_xlarge.jpg"
       alt="Story image"
       width="200px"
     />
-    <h3 class="title">{{ctrl.story.title}}</h3>
+  </div>
+  <div class="content">
+    <h3 id="title">{{ctrl.story.title}}</h3>
     <p>
       <a
         id="view-more"

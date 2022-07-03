@@ -1,3 +1,69 @@
+.welcome-container {
+  position: relative;
+}
+
+.welcome {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin-bottom: 15px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0;
+  background-color: #131313;
+}
+
+.welcome-container::after {
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+  border-right-color: #fff;
+  border-style: solid;
+  border-top-color: transparent;
+  border-width: 12px 12px 0 0;
+  bottom: 0;
+  content: '';
+  position: absolute;
+  right: 0;
+  top: auto;
+  z-index: 40;
+}
+
+#brand {
+  color: #be1319;
+}
+
+#welcome-title {
+  margin-top: 50px;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 3.5rem;
+  color: #f6f6f6;
+}
+
+#welcome-description {
+  margin-bottom: 50px;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 1.5rem;
+  color: #f6f6f6;
+}
+
 .text-bold {
   font-weight: 600;
+}
+
+/* large devices: 992 > */
+@media (min-width: 992px) {
+  #welcome-title {
+    font-size: 6.5rem;
+    color: #f6f6f6;
+  }
+
+  #welcome-description {
+    font-size: 2rem;
+    color: #c7c7c7;
+  }
 }

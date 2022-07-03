@@ -1,12 +1,13 @@
 <div class="thumbnail thumbnail-comics text-center sm-height md-height">
   <div class="caption">
     <img
-      id="comic-img"
-      class="img-rounded"
-      ng-src="{{ctrl.comic.thumbnail.path + '/portrait_fantastic.jpg'}}"
+      id="detail-image"
+      ng-src="{{ctrl.comic.thumbnail.path + '/standard_fantastic.jpg'}}"
       alt="Comic image"
     />
-    <h3 class="title">{{ctrl.comic.title}}</h3>
+  </div>
+  <div class="content">
+    <h3 id="title">{{ctrl.comic.title}}</h3>
     <p>
       <a id="view-more" href="{{ctrl.comic.urls[0].url}}" target="_blank"
         >View more <span class="glyphicon glyphicon-new-window" aria-hidden="true"></span

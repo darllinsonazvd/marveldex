@@ -1,10 +1,12 @@
 <div class="thumbnail thumbnail-characters character-container text-center">
   <div class="caption">
     <img
-      class="img-rounded"
-      ng-src="{{ctrl.character.thumbnail.path + '/standard_xlarge.jpg'}}"
+      class="character-image"
+      ng-src="{{ctrl.character.thumbnail.path + '/standard_fantastic.jpg'}}"
       alt="Character image"
     />
+  </div>
+  <div class="content">
     <h3 id="title">{{ctrl.character.name}}</h3>
     <p id="description">{{ctrl.character.description || 'No description for this character.'}}</p>
   </div>

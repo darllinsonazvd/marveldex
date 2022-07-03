@@ -8,12 +8,27 @@
 }
 
 .search-bar {
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 2px solid #131313;
+  border-radius: 0;
+  box-shadow: 0;
   cursor: text;
 }
 
 .search-bar:focus {
-  border-color: #c02e2e;
+  border-bottom: 2px solid #e62429;
   box-shadow: none;
+}
+
+.btn-danger {
+  background-color: #e62429;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-danger:hover {
+  background-color: #ce141a;
 }
 
 .dropdown-menu-right {

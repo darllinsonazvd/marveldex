@@ -7,7 +7,7 @@
 }
 
 .header-details {
-  background-image: url('../../../assets/img/banner.jpg');
+  background-image: url('../../../assets/img/banner.png');
   background-repeat: repeat-x;
 }
 
@@ -33,7 +33,7 @@
 }
 
 hr.solid {
-  border-top: 2px solid #d43f3a;
+  border-top: 2px solid #e62429;
 }
 
 .no-events {
